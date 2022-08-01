@@ -32,21 +32,21 @@ Review.init({
     degree_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'degree',
+            model: 'Degree',
             key: 'id',
         },
     },
     user_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'user',
+            model: 'User',
             key: 'id',
         },
     },
     school_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'school',
+            model: 'School',
             key: 'id',
         },
     },
