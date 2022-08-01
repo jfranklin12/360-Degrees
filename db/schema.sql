@@ -1,3 +1,5 @@
-DROP DATABASE IF EXISTS project_2;
+DROP DATABASE IF EXISTS degree_review_db;
 
-CREATE DATABASE project_2;
+CREATE DATABASE degree_review_db;
+
+USE degree_review_db;
