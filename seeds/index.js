@@ -14,8 +14,6 @@ const seedAll = async () => {
   await seedReview();
 
   await seedSchool();
-
-  process.exit(0);
 };
 
 seedAll();
