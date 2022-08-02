@@ -27,6 +27,22 @@ router.get("/:id", async (req, res) => {
         res.status(500).json(err);
 
     }
-})
+});
 
+router.post("/", async (req, res) => {
+    try {
+
+        const degree = await Degree.create({
+            degree_name: req.body.degree_name,
+            score_value: req.body.score_value
+        });
+
+        res.status(200).json(degree);
+
+    } catch (err) {
+
+        res.status(500).json(err);
+    
+    }
+});
 module.exports = router;

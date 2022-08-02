@@ -30,4 +30,24 @@ router.get("/:id", async (req, res) => {
     }
 })
 
+router.post("/", async (req, res) => {
+
+    try {
+
+        const user = await User.create({
+            username: req.body.username,
+            password: req.body.password,
+            email: req.body.email
+        });
+
+        res.status(200).json(user);
+
+    } catch (err) {
+
+        res.status(500).json(err);
+    
+    }
+
+});
+
 module.exports = router;

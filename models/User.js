@@ -18,6 +18,9 @@ User.init(
     password: {
         type: DataTypes.STRING,
         allowNull: false,
+        // validate: {
+        //     len: [8]
+        // }
     },
     email: {
         type: DataTypes.STRING,
@@ -27,20 +30,20 @@ User.init(
             isEmail: true,
         },
     },
-}, 
+},
 {
-    hooks: {
-        beforeCreate: async (newUserData) => {
-            newUserData.password = await bcrypt.hash(newUserData.password, 10);
-            return newUserData;
-        },        
-        beforeUpdate: async (updatedUserData) => {
-            if (updatedUserData.password) {
-            updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-            }
-            return updatedUserData;
-        },
-    },
+    // hooks: {
+    //     beforeCreate: async (newUserData) => {
+    //         newUserData.password = await bcrypt.hash(newUserData.password, 10);
+    //         return newUserData;
+    //     },        
+    //     beforeUpdate: async (updatedUserData) => {
+    //         if (updatedUserData.password) {
+    //         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+    //         }
+    //         return updatedUserData;
+    //     },
+    // },
     sequelize,
     timestamps: false,
     freezeTableName: true,
