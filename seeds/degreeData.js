@@ -2,18 +2,8 @@ const { Degree } = require("../models");
 
 const degreeSeedData = [
     {
-
-    },
-    {
-    },
-    {
-
-    },
-    {
-
-    },
-    {
-
+        degree_name: "Engineering",
+        score_value: 90,
     },
 ];
 

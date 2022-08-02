@@ -18,7 +18,7 @@ Degree.init({
         type: DataTypes.FLOAT,
         allowNull: false,
     },
-}, 
+},
 {
     sequelize,
     timestamps: false,
