@@ -17,6 +17,9 @@ Degree.init({
     score_value: {
         type: DataTypes.FLOAT,
         allowNull: false,
+        validate: {
+            isDecimal: true
+        }
     },
 },
 {

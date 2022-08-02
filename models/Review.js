@@ -13,18 +13,30 @@ Review.init({
     score_1: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        validate: {
+            isDecimal: true
+        }
     },
     score_2: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        validate: {
+            isDecimal: true
+        }
     },
     score_3: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        validate: {
+            isDecimal: true
+        }
     },
     score_4: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        validate: {
+            isDecimal: true
+        }
     },
     comment: {
         type: DataTypes.STRING,
@@ -32,25 +44,25 @@ Review.init({
     degree_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'Degree',
-            key: 'id',
+            model: "Degree",
+            key: "id",
         },
     },
     user_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'User',
-            key: 'id',
+            model: "User",
+            key: "id",
         },
     },
     school_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: 'School',
-            key: 'id',
+            model: "School",
+            key: "id",
         },
     },
-}, 
+},
 {
     sequelize,
     timestamps: false,
