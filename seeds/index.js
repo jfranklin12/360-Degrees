@@ -14,6 +14,7 @@ const seedAll = async () => {
   await seedReview();
 
   await seedSchool();
+
 };
 
 seedAll();

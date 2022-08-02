@@ -1,20 +1,31 @@
+const { Degree } = require("../../models");
+
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
     try {
         //TODO
-        res.status(200).json({ message: "Everything is copacetic! "});
+        const degree = await Degree.findAll();
+
+        res.status(200).json(degree);
+
     } catch (err) {
         res.status(500).json(err)
     }
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
+    
     try {
-        //TODO
-        res.status(200).json({ message: "Everything is copacetic! "});
-    } catch (err) {
-        res.status(500).json(err)
+
+        const degree = await Degree.findByPk(req.params.id);
+
+        res.status(200).json(degree);
+
+    } catch {
+
+        res.status(500).json(err);
+
     }
 })
 
