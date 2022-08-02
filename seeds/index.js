@@ -15,7 +15,6 @@ const seedAll = async () => {
 
   await seedSchool();
 
-  process.exit(0);
 };
 
 seedAll();
