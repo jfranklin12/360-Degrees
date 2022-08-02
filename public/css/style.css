@@ -1,5 +1,13 @@
+.navbar {
+    background-color: #AF978D;
+}
+
+.button-style {
+    background-color: #C6A489;
+    color: #684E63;
+}
+
 .footer-link {
     text-decoration: none;
     color: #C6A489;
-    
 }
