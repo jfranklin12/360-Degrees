@@ -1,9 +1,8 @@
-.image-heading {
-    background-color: #684E63;
+.navbar {
+    background-color: #AF978D;
 }
 
-.image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.button-style {
+    background-color: #C6A489;
+    color: #684E63;
 }
