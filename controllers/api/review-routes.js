@@ -2,7 +2,7 @@ const { Review } = require("../../models");
 
 const router = require("express").Router();
 
-
+//This route gets a list of all reviews.
 router.get("/", async (req, res) => {
 
     try {
