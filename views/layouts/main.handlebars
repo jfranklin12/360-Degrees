@@ -2,42 +2,24 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     {{! TODO: Change this when name is decided upon. }}
-    <title>Degrees</title>
+    <title>360 Degrees</title>
     <!--Import materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-      integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="/css/style.css">
-
   </head>
 
   <body>
 
+    {{!-- navbar --}}
     <nav>
       <div class="nav-wrapper navbar">
-        <a href="#!" class="brand-logo title">🎓</a>
+        <a href="#!" class="brand-logo title">🎓360</a>
         <ul class="right hide-on-med-and-down">
           <li><a class="waves-effect waves-light btn button-style">Degrees
               <i class="material-icons right button-style">assessment</i></a></li>
@@ -49,12 +31,15 @@
       </div>
     </nav>
 
+    {{!-- Parallax image for website --}}
+    <div class="parallax-container">
+      <div class="parallax"><img src="360-degrees.jpg"></div>
+    </div>
 
-    <div class="image-heading"><img class="responsive-img image" src="360-degrees.jpg"></div>
+    {{!-- ALlow main handlebars to connect to other handlebars --}}
+    {{{body}}}
 
-    {{{ body }}}
- 
-
+    {{!-- Footer --}}
     <footer class="page-footer footer">
       <div class="container">
         <div class="row">
@@ -79,7 +64,8 @@
         </div>
       </div>
     </footer>
-
+    
+  <script src="js/parallax.js"></script>
   </body>
 
 </html>
