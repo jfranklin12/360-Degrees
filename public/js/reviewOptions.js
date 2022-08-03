@@ -3969,12 +3969,16 @@ console.log(stateList);
 
 
 function getInput() {
+    //Populates state list
     for (var x in stateList) {
         stateEl.options[stateEl.options.length] = new Option(stateList[x]);
     }
+    //When State is Selected
     stateEl.onchange = function () {
+        //Save the Selected State
         selState = stateEl.options[stateEl.selectedIndex].value;
         console.log(selState);
+        //
         for (y = 0; y < schoolList.length; y++) {
             if (y % 2 !== 0 && schoolList[y] === selState) {
                 stateSchoolList.push(schoolList[y - 1]);
@@ -3996,7 +4000,7 @@ function getInput() {
             };
         };
     };
-    
+
 }
 
 getInput();
