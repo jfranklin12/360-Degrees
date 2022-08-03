@@ -13,8 +13,10 @@ Have you ever been unsure of what degree you wanted to pursue? Were you worried 
 * [Sequelize](https://sequelize.org/)
 * [ExpressJS](https://expressjs.com/)
 * [HandlebarsJS](https://handlebarsjs.com/)
+* [Materialize](https://materializecss.com/)
 * [eslint](https://eslint.org/)
 * [Heroku](https://heroku.com)
+
 
 ## Live Website ##
 
