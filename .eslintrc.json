@@ -1,6 +1,7 @@
 {
   // Prevent ESLint from looking at parent directories
   "root": true,
+  "extends": ["prettier"],
   "env": {
     "browser": true,
     "commonjs": true,
