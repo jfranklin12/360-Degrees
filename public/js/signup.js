@@ -1,9 +1,9 @@
 async function signupHandler (event) {
     event.preventDefault();
 
-    const username;
-    const email;
-    const password;
+    const username = document.getElementById("signup-username").value.trim();
+    const email = document.getElementById("signup-email").value.trim();
+    const password = document.getElementById("signup-password").value.trim();
 
     if (username && email && password) {
 
@@ -14,6 +14,7 @@ async function signupHandler (event) {
         });
 
         if (response.ok) {
+            alert("Success!");
             document.location.replace("/");
         } else {
             alert(response.statusText);
@@ -21,3 +22,5 @@ async function signupHandler (event) {
 
     }
 }
+
+document.getElementById("signup-submit-button", signupHandler);
