@@ -1,20 +1,27 @@
-# Project-2
+# 360 Degrees #
 
-Project Description
-our project _____, gives a review score for college degrees. this review score is aggregated from user reviews of each degree and updated after every post to reflect those reviews. 
-along with an overall aggregate score we also have a scores to reflect other factors "Was the user satisfied with their salary expectation?", "How long did it take to find a job after completing this degree?"
-and "How difficult was it to complete this degree?". These 3 scores along with an overall review score will be given to each degree. Users can sign up with a Username and password then post a review of their degrees. Our project also allows Younger users a unique and rare insight on possible carrers after college and having real life reviews of people who have actually pursued those careers.
+**Note:** This repository contains our source code for a full-stack web application created as part of GA Tech's 2022 Coding Bootcamp.
 
--Why you used the technologies you used
-We used node to create the servers 
- mysql mataerialize handlebars express
+## Description ##
 
--Some of the challenges you faced and features you hope to implement in the future.
+Have you ever been unsure of what degree you wanted to pursue? Were you worried about whether the time, effort, and money spent would be justified if you were to go into a particular field? 360 Degrees is here to help! With 360 Degrees users are able to rate and leave reviews for not just a particular class or teacher but for the entire degree program they pursued. Quickly and easily look up your degree and see what others have to say about it. Easily see others scores for the important questions such as: "Was the degree overall worthwhile?", "Was obtaining a career a quick endeavor after graduation?", and many more! If you're short on time you can look for the degree's aggregate review score which gives an overall idea of what users are saying about that particular degree program. Prepare to start your higher education journey confident and informed thanks to 360 Degrees!
 
-One of the challenges we faced was implementing sequalize and bcrypt 
+## Technologies Used ##
 
-How to Install and Run the Project
+* [NodeJS](https://nodejs.org/en/)
+* [MySQL](https://www.mysql.com/) 
+* [Sequelize](https://sequelize.org/)
+* [ExpressJS](https://expressjs.com/)
+* [HandlebarsJS](https://handlebarsjs.com/)
+* [Materialize](https://materializecss.com/)
+* [eslint](https://eslint.org/)
+* [Heroku](https://heroku.com)
 
-How to Use the Project
 
-Include Credits
+## Live Website ##
+
+[Placeholder](#)
+
+## Screenshot ##
+
+![Placeholder]Placeholder
