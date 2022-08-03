@@ -15,5 +15,21 @@ const newReview = async (event) => {
     console.log(score_2_value);
     console.log(comment);
 
+    if(degree && score_1_value && score_2_value && comment) {
+        const response = await fetch("/api/review", {
+            method: "POST",
+            body: JSON.stringify({ degree, score_1_value, score_2_value, comment}),
+            headers: {
+                // need to look up
+            },
+        });
 
-}
+        if(response.ok) {
+            document.location.replace("/degree");
+        } else {
+            alert("Something went wrong!");
+        }
+    }
+
+
+};
