@@ -1,4 +1,6 @@
-async function loginHandler () {
+async function loginHandler (event) {
+
+    event.preventDefault();
 
     //Get the inputted username and password from the proper fields.
     const username = document.getElementById("login-username").value.trim();
@@ -14,7 +16,7 @@ async function loginHandler () {
 
         if (response.ok) {
             alert("Login succesful!");
-            document.location.replace("/homepage");
+            document.location.replace("/");
         } else {
             alert(response.statusText);
         }
