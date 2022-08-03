@@ -30,7 +30,9 @@ router.get("/:id", async (req, res) => {
     }
 })
 
-router.post("/", async (req, res) => {
+// /api/user/signup 
+//This route is used for signing up and creating a new user.
+router.post("/signup", async (req, res) => {
 
     try {
 
@@ -50,6 +52,8 @@ router.post("/", async (req, res) => {
 
 });
 
+// /api/user/login
+//This route is used for logging into an account.
 router.post("/login", async (req, res) => {
 
     try {

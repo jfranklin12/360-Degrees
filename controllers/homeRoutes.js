@@ -1,5 +1,6 @@
 const router = require("express").Router();
 
+//This route is for rendering the home page using handlebars.
 router.get("/", async (req, res) => {
 
     try {
@@ -10,6 +11,7 @@ router.get("/", async (req, res) => {
 
 });
 
+// This route is for rendering the login page using handlebars.
 router.get("/login", async (req, res) => {
 
     try {
@@ -20,6 +22,7 @@ router.get("/login", async (req, res) => {
 
 });
 
+//This route is for rendering the review page using handlebars.
 router.get("/review", async (req, res) => {
 
     try {
@@ -30,6 +33,7 @@ router.get("/review", async (req, res) => {
 
 });
 
+//This route is for rendering the degree page using handlebars.
 router.get("/degree", async (req, res) => {
 
     try {
