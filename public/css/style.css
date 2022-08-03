@@ -12,4 +12,13 @@
     color: #684E63;
 }
 
+.review {
+    background-color: #A18A94;
+    color:#301934;
+}
+
+input, select, option, label {
+    color:#301934
+}
+
 
