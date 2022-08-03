@@ -26,7 +26,11 @@
           <li><a class="waves-effect waves-light btn button-style">Reviews
               <i class="material-icons right button-style">forum</i></a></li>
           <li><a class="waves-effect waves-light btn button-style">Login
+              <i class="material-icons right button-style">key</i></a></li>
+          {{#unless loggedIn}}
+          <li><a class="waves-effect waves-light btn button-style">Signup
               <i class="material-icons right button-style">person</i></a></li>
+          {{/unless}}
         </ul>
       </div>
     </nav>

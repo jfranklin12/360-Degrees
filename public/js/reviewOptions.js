@@ -3985,13 +3985,13 @@ function getInput() {
             }
         }
         // console.log(stateSchoolList);
-        for (var x in stateSchoolList) {
+        for (let x in stateSchoolList) {
             collegeEl.options[collegeEl.options.length] = new Option(stateSchoolList[x]);
         }
         collegeEl.onchange = function () {
             selSchool = collegeEl.options[collegeEl.selectedIndex].value;
             console.log(selSchool);
-            for (var x in degreeList) {
+            for (let x in degreeList) {
                 degreeEl.options[degreeEl.options.length] = new Option(degreeList[x]);
             }
             degreeEl.onchange = function () {
@@ -4000,7 +4000,6 @@ function getInput() {
             };
         };
     };
-
 }
 
 getInput();
