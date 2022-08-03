@@ -37,7 +37,7 @@ router.get("/:id", async (req, res) => {
 });
 
 //TODO: Implement logic once forms are in place.
-router.post("/", async (req, res) => {
+router.post("/new", async (req, res) => {
 
     try {
 

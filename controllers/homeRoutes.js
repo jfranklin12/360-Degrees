@@ -1,3 +1,5 @@
+const { restore } = require("../models/User");
+
 const router = require("express").Router();
 
 //This route is for rendering the home page using handlebars.
@@ -38,6 +40,16 @@ router.get("/review", async (req, res) => {
     try {
         res.render("review");
     } catch (err) {
+        res.status(500).json(err);
+    }
+
+});
+
+router.get("/review/new", async (req, res) => {
+
+    try {
+        res.render("newreview");
+    } catch {
         res.status(500).json(err);
     }
 
