@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var elems = document.querySelectorAll(".parallax");
-    var instances = M.AutoInit();
+    var elems = document.querySelector(".parallax");
+    var instances = M.Parallax.init(elems);
     console.log(instances);
 });
 
