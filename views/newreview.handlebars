@@ -1,20 +1,88 @@
-<div class="container">
-    <h1>This is the degrees page.</h1>
-        
-    <div class="row">
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Degree from College Name</span>
-                    <div class="card-action">
-                        <a>Score 1</a>
-                        <a>Score 2</a>
-                        <a>Score 3</a>
-                        <a>Score 4</a>
-                    </div>
-                    <p>User Comment</p>
-                </div>
+<div class="main">
+<div class="container review">
+  <h1>Give the 360 view of your degree!</h1>
+  <div class="row">
+    <form class="col s12 gen_info">
+        <div class="row">
+            <div class=" col s6">
+                Location of College: 
+                <select name="state" id="state">
+                <option value="" selected="selected">Select State</option>
+                </select>
             </div>
-
+            <div class="no-autoinit col s6">
+                College Attended: 
+                <select name="college" id="college">
+                <option value="" selected="selected">Please Select State First</option>
+                </select>
+            </div>
         </div>
-   
+        <div class="row">
+            <div class="no-autoinit col s12">
+                Degree:
+                <select name="degree" id="degree">
+                <option value="" selected="selected">Please Select a College First</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field col s12 m6" id="score-1">
+            <select>
+                <option value="">Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Score 1</label>
+        </div>
+        <div class="input-field col s12 m6" id="score-2">
+            <select>
+                <option value="">Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Score 2</label>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="comment" type="text" class="validate" />
+                <label for="comment">Comment</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" id="new-review-submit-button">Submit
+        <i class="material-icons right">send</i>
+        </button>
+    </form>
+  </div>
+</div>
+</div>
+<h1>This is a review page.</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- Input Forms for Review --}}
+<form class="gen_info">
+    Location of College: <select name="state" id="state">
+        <option value="" selected="selected">Select State</option>
+    </select>
+    College Attended: <select name="college" id="college">
+        <option value="" selected="selected">Please Select State First</option>
+    </select>
+    Degree: <select name="degree" id="degree">
+        <option value="" selected="selected">Please Select a College First</option>
+    </select>
+</form>
+
+<script src="/js/reviewOptions.js"></script> 
+<script src="/js/createReview.js"></script>
+<script src="/js/degree.js"></script>
