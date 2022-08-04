@@ -3949,13 +3949,48 @@ const schoolList = [
 console.log(degreeList);
 console.log(schoolList);
 let allStatesList = [];
-let stateSchoolList = [];
 let selState = "";
 let selSchool = "";
 let selDegree = "";
 let stateEl = document.getElementById("state");
 let collegeEl = document.getElementById("college");
 let degreeEl = document.getElementById("degree");
+let stateSchoolList = [];
+
+function getDegrees() {
+    //Populate the degree list
+    for (let x in degreeList) {
+        degreeEl.options[degreeEl.options.length] = new Option(degreeList[x]);
+    }
+    // degreeEl.oncange = function () {
+        //save the Selected Degree
+        selDegree = degreeEl.options[degreeEl.selectedIndex].value;
+        console.log(selDegree);
+    };
+// }
+
+
+function getSchools() {
+    //Create a list of schools that match the state selected
+    for (y = 0; y < schoolList.length; y++) {
+        if (y % 2 !== 0) {
+            stateSchoolList.push(schoolList[y - 1]);
+        }
+    }
+    // Populate State List based on the selected State
+    for (let x in stateSchoolList) {
+        collegeEl.options[collegeEl.options.length] = new Option(stateSchoolList[x]);
+    }
+
+    //When a school is selected
+    // collegeEl.onchange = function () {
+        //Save the Selected School
+        selSchool = collegeEl.options[collegeEl.selectedIndex].value;
+        console.log(selSchool);
+        // getDegrees();
+    };
+// }
+
 
 for (let i = 0; i < schoolList.length; i++) {
     if (i % 2 !== 0) {
@@ -3968,43 +4003,29 @@ let stateList = [...new Set(allStatesList)];
 console.log(stateList);
 
 
-function getInput() {
+function getStates() {
     //Populates state list
     for (var x in stateList) {
         stateEl.options[stateEl.options.length] = new Option(stateList[x]);
     }
     //When State is Selected
-    stateEl.onchange = function () {
-        //Save the Selected State
-        selState = stateEl.options[stateEl.selectedIndex].value;
-        console.log(selState);
-        //Create a list of schools that match the state selected
-        for (y = 0; y < schoolList.length; y++) {
-            if (y % 2 !== 0 && schoolList[y] === selState) {
-                stateSchoolList.push(schoolList[y - 1]);
-            }
-        }
-        // console.log(stateSchoolList);
-        // Populate State List based on the selected State
-        for (let x in stateSchoolList) {
-            collegeEl.options[collegeEl.options.length] = new Option(stateSchoolList[x]);
-        }
-        //When a school is selected
-        collegeEl.onchange = function () {
-            //Save the Selected School
-            selSchool = collegeEl.options[collegeEl.selectedIndex].value;
-            console.log(selSchool);
-            //Populate the degree list
-            for (let x in degreeList) {
-                degreeEl.options[degreeEl.options.length] = new Option(degreeList[x]);
-            }
-            degreeEl.onchange = function () {
-                //save the Selected Degree
-                selDegree = degreeEl.options[degreeEl.selectedIndex].value;
-                console.log(selDegree);
-            };
-        };
-    };
+    // stateEl.onchange = function () {
+    //     console.log(collegeEl);
+    //     //Save the Selected State
+    //     selState = stateEl.options[stateEl.selectedIndex].value;
+    //     console.log(selState);
+    //     getSchools(selState, stateSchoolList);
+    // };
 }
 
-getInput();
+getStates();
+getSchools();
+getDegrees();
+
+document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll("select");
+    console.log(elems);
+    var instances = M.FormSelect.init(elems);
+    console.log(instances);
+});
+
