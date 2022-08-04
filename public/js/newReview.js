@@ -2,7 +2,7 @@ const newReviewHandler = async (event) => {
     event.preventDefault();
 
     // const college = document.getElementById("college").value.trim();
-    const degree = document.getElementById("degree");
+    let degree = document.getElementById("degree");
     let degree_val = degree.options[degree.selectedIndex].value;
     const score_1 = document.getElementById("score-1");
     let score_1_value = score_1.select.value;
@@ -28,7 +28,7 @@ const newReviewHandler = async (event) => {
     {
         const response = await fetch("/api/review/new", {
             method: "POST",
-            body: JSON.stringify({ degree, score_1_value, score_2_value, comment}),
+            body: JSON.stringify({ degree_val, score_1_value, score_2_value, comment}),
             headers: { "Content-Type": "application/json"},
         });
 
