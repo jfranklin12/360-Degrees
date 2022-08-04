@@ -5887,7 +5887,7 @@ const degreeList = [
 // let allStatesList = [];
 // let selState = "";
 // let selSchool = "";
-let selDegree = "";
+// let selDegree = "";
 // let stateEl = document.getElementById("state");
 // let collegeEl = document.getElementById("college");
 let degreeEl = document.getElementById("degree");
@@ -5900,8 +5900,8 @@ let degreeEl = document.getElementById("degree");
     }
     // degreeEl.onchange = function () {
     //save the Selected Degree
-    selDegree = degreeEl.options[degreeEl.selectedIndex].value;
-    console.log(selDegree);
+    // selDegree = degreeEl.options[degreeEl.selectedIndex].value;
+    // console.log(selDegree);
 // };
 // }
 
