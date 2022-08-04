@@ -1,94 +1,94 @@
 const degreeList = [
-    "Accounting",
-    "Art Design",
-    "Automotive Technology",
-    "Aviation",
-    "Biology",
-    "Business",
-    "CAD/Computer Aided Drafting",
-    "Child Development",
-    "Christian Counseling",
-    "Clinical Psychology",
-    "Communications",
-    "Computer Animation",
-    "Computer Engineering",
-    "Computer Forensics",
-    "Computer Networking",
-    "Computer Programming",
-    "Computer Science",
-    "Construction Management",
-    "Counseling",
-    "Counseling Psychology",
-    "Criminal Justice",
-    "Culinary Arts",
-    "Cybersecurity",
-    "Diesel Mechanic",
-    "Early Childhood Education",
-    "Education",
-    "Electrical Engineering",
-    "Electronics",
-    "English",
-    "Exercise Science",
-    "Fitness Trainer",
-    "Forensic Psychology",
-    "Forensic Science",
-    "Graphic Design",
-    "Gunsmithing",
-    "Health Education",
-    "Health Sciences",
-    "Healthcare Administration",
-    "Healthcare Informatics",
-    "Healthcare Management",
-    "History",
-    "Holistic Medicine",
-    "Hospitality Management",
-    "Human Resources",
-    "Human Services",
-    "HVAC",
-    "Information Technology",
-    "Interior Design",
-    "Jewelry Design",
-    "Journalism",
-    "Landscape Design",
-    "Law",
-    "Mathematics",
-    "Mechanical Engineering",
-    "Medical Billing Coding",
-    "Medical Office Administration",
-    "Motorcycle Mechanic",
-    "Music Production",
-    "Network Administration",
-    "Network Security",
-    "Nurse Practitioner (NP)",
-    "Nursing",
-    "Nutrition",
-    "Occupational Therapy Assistant",
-    "Office Management",
-    "Organizational Leadership",
-    "Patient Care Technician",
-    "Personal Training",
-    "Pharmacy",
-    "Pharmacy Technician",
-    "Photography",
-    "Physics",
-    "Psychology",
-    "Public Administration",
-    "Public Health",
-    "Real Estate",
-    "Respiratory Therapy",
-    "School Counseling",
-    "Social Work",
-    "Sports Management",
-    "Sports Medicine",
-    "Substance Abuse Counseling",
-    "Teaching",
-    "Technology Management",
-    "Veterinary Technician",
-    "Video Game Design",
-    "Vocational",
-    "Web Design",
-    "Writing",
-    "Other",
+  "Accounting",
+  "Art Design",
+  "Automotive Technology",
+  "Aviation",
+  "Biology",
+  "Business",
+  "CAD/Computer Aided Drafting",
+  "Child Development",
+  "Christian Counseling",
+  "Clinical Psychology",
+  "Communications",
+  "Computer Animation",
+  "Computer Engineering",
+  "Computer Forensics",
+  "Computer Networking",
+  "Computer Programming",
+  "Computer Science",
+  "Construction Management",
+  "Counseling",
+  "Counseling Psychology",
+  "Criminal Justice",
+  "Culinary Arts",
+  "Cybersecurity",
+  "Diesel Mechanic",
+  "Early Childhood Education",
+  "Education",
+  "Electrical Engineering",
+  "Electronics",
+  "English",
+  "Exercise Science",
+  "Fitness Trainer",
+  "Forensic Psychology",
+  "Forensic Science",
+  "Graphic Design",
+  "Gunsmithing",
+  "Health Education",
+  "Health Sciences",
+  "Healthcare Administration",
+  "Healthcare Informatics",
+  "Healthcare Management",
+  "History",
+  "Holistic Medicine",
+  "Hospitality Management",
+  "Human Resources",
+  "Human Services",
+  "HVAC",
+  "Information Technology",
+  "Interior Design",
+  "Jewelry Design",
+  "Journalism",
+  "Landscape Design",
+  "Law",
+  "Mathematics",
+  "Mechanical Engineering",
+  "Medical Billing Coding",
+  "Medical Office Administration",
+  "Motorcycle Mechanic",
+  "Music Production",
+  "Network Administration",
+  "Network Security",
+  "Nurse Practitioner (NP)",
+  "Nursing",
+  "Nutrition",
+  "Occupational Therapy Assistant",
+  "Office Management",
+  "Organizational Leadership",
+  "Patient Care Technician",
+  "Personal Training",
+  "Pharmacy",
+  "Pharmacy Technician",
+  "Photography",
+  "Physics",
+  "Psychology",
+  "Public Administration",
+  "Public Health",
+  "Real Estate",
+  "Respiratory Therapy",
+  "School Counseling",
+  "Social Work",
+  "Sports Management",
+  "Sports Medicine",
+  "Substance Abuse Counseling",
+  "Teaching",
+  "Technology Management",
+  "Veterinary Technician",
+  "Video Game Design",
+  "Vocational",
+  "Web Design",
+  "Writing",
+  "Other",
 ];
 
 // const schoolList = [
@@ -3946,7 +3946,6 @@ const degreeList = [
 //     "WY",
 // ];
 
-
 // document.addEventListener('DOMContentLoaded', function () {
 //     const inputField = document.querySelector('.autocomplete');
 //     M.Autocomplete.init(inputField, {
@@ -5894,17 +5893,16 @@ let degreeEl = document.getElementById("degree");
 // let stateSchoolList = [];
 
 // function getDegrees() {
-    //Populate the degree list
-    for (let x in degreeList) {
-        degreeEl.options[degreeEl.options.length] = new Option(degreeList[x]);
-    }
-    // degreeEl.onchange = function () {
-    //save the Selected Degree
-    // selDegree = degreeEl.options[degreeEl.selectedIndex].value;
-    // console.log(selDegree);
+//Populate the degree list
+for (let x in degreeList) {
+  degreeEl.options[degreeEl.options.length] = new Option(degreeList[x]);
+}
+// degreeEl.onchange = function () {
+//save the Selected Degree
+// selDegree = degreeEl.options[degreeEl.selectedIndex].value;
+// console.log(selDegree);
 // };
 // }
-
 
 // function getSchools() {
 //     //Create a list of schools that match the state selected
@@ -5927,7 +5925,6 @@ let degreeEl = document.getElementById("degree");
 // };
 // }
 
-
 // for (let i = 0; i < schoolList.length; i++) {
 //     if (i % 2 !== 0) {
 //         allStatesList.push(schoolList[i]);
@@ -5937,7 +5934,6 @@ let degreeEl = document.getElementById("degree");
 
 // let stateList = [...new Set(allStatesList)];
 // console.log(stateList);
-
 
 // function getStates() {
 //     //Populates state list
@@ -5957,6 +5953,3 @@ let degreeEl = document.getElementById("degree");
 // getStates();
 // getSchools();
 // getDegrees();
-
-
-
