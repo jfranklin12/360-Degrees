@@ -41,4 +41,7 @@ input, select, option, label {
     color: #301934;
 }
 
+select option:active {
+    color: #301934;
+}
 
