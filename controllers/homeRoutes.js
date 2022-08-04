@@ -45,7 +45,7 @@ router.get("/review", async (req, res) => {
 
 });
 
-router.get("/review/new", async (req, res) => {
+router.get("/newreview", async (req, res) => {
 
     try {
         res.render("newreview");
