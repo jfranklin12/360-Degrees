@@ -3,7 +3,7 @@
   <h1>Give the 360 view of your degree!</h1>
   <div class="row">
     <form class="col s12 gen_info">
-        <div class="row">
+        {{!-- <div class="row">
             <div class=" col s6">
                 Location of College: 
                 <select name="state" id="state">
@@ -14,12 +14,12 @@
                 College Attended: 
                 <input type="text" id="autocomplete-input" class="autocomplete">
             </div>
-        </div>
+        </div> --}}
         <div class="row">
             <div class="no-autoinit col s12">
                 Degree:
                 <select name="degree" id="degree">
-                <option value="" selected="selected">Please Select a College First</option>
+                <option value="" selected="selected">Choose your College</option>
                 </select>
             </div>
         </div>
@@ -45,7 +45,7 @@
             </select>
             <label>How quickly were you able to find a job in your field?</label>
         </div>
-                <div class="input-field col s12 m6" id="score-1">
+                <div class="input-field col s12 m6" id="score-3">
             <select>
                 <option value="">Choose an Option</option>
                 <option value="1">Very Satisfied</option>
@@ -56,7 +56,7 @@
             </select>
             <label>How satisfied do you feel with your income?</label>
         </div>
-        <div class="input-field col s12 m6" id="score-2">
+        <div class="input-field col s12 m6" id="score-4">
             <select>
                 <option value="">Choose an Option</option>
                 <option value="1">Very Satisfied</option>
@@ -109,4 +109,5 @@
 
 <script src="/js/reviewOptions.js"></script> 
 <script src="/js/createReview.js"></script>
+<script src="/js/newReview.js"></script>
 {{!-- <script src="/js/degree.js"></script> --}}

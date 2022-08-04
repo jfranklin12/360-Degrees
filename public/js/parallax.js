@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(instances);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.sidenav');
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".sidenav");
     M.Sidenav.init();
-  });
+});
