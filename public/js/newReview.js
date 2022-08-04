@@ -12,16 +12,16 @@ const newReviewHandler = async (event) => {
 
     // console.log(college);
     console.log(degree_val);
-    console.log(score_1_value);
-    console.log(score_2_value);
-    console.log(comment);
+    // console.log(score_1_value);
+    // console.log(score_2_value);
+    // console.log(comment);
 
     if(degree && score_1_value && score_2_value && comment)
     
     {
         const response = await fetch("/api/review/new", {
             method: "POST",
-            body: JSON.stringify({ degree, score_1_value, score_2_value, comment}),
+            body: JSON.stringify({ degree_val, score_1_value, score_2_value, comment}),
             headers: { "Content-Type": "application/json"},
         });
 
