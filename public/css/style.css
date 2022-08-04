@@ -4,12 +4,12 @@
 
 .button-style {
     background-color: #C6A489;
-    color: #684E63;
+    color: #301934;
 }
 
 .footer-text {
     text-decoration: none;
-    color: #684E63;
+    color: #301934;
 }
 
 .review {
@@ -19,6 +19,12 @@
 
 input, select, option, label {
     color:#301934
+}
+
+.body {
+    background-color: #684E63;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 

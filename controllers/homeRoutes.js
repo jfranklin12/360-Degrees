@@ -1,3 +1,5 @@
+const { restore } = require("../models/User");
+
 const router = require("express").Router();
 
 //This route is for rendering the home page using handlebars.
@@ -22,12 +24,32 @@ router.get("/login", async (req, res) => {
 
 });
 
+router.get("/signup", async (req, res) => {
+
+    try {
+        res.render("signup");
+    } catch (err) {
+        res.status(500).json(err);
+    }
+
+});
+
 //This route is for rendering the review page using handlebars.
 router.get("/review", async (req, res) => {
 
     try {
         res.render("review");
     } catch (err) {
+        res.status(500).json(err);
+    }
+
+});
+
+router.get("/review/new", async (req, res) => {
+
+    try {
+        res.render("newreview");
+    } catch {
         res.status(500).json(err);
     }
 
