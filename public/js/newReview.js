@@ -17,6 +17,8 @@ const newReviewHandler = async (event) => {
     console.log(degree);
     console.log(score_1_value);
     console.log(score_2_value);
+    console.log(score_3_value);
+    console.log(score_4_value);
     console.log(comment);
 
     if(degree && score_1_value && score_2_value && comment) {
