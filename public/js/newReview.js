@@ -2,8 +2,9 @@ const newReviewHandler = async (event) => {
     event.preventDefault();
 
     // const college = document.getElementById("college").value.trim();
-    let degree = document.getElementById("degree");
+    const degree = document.getElementById("degree");
     let degree_val = degree.options[degree.selectedIndex].value;
+
     const score_1 = document.getElementById("score-1");
     const score_1_value = score_1.options[];
     const score_2 =document.getElementById("score-2");
@@ -22,21 +23,21 @@ const newReviewHandler = async (event) => {
     console.log(score_4);
     console.log(comment);
 
-    if(degree && score_1_value && score_2_value && comment)
+    // if(degree && score_1_value && score_2_value && comment)
     
-    {
-        const response = await fetch("/api/review/new", {
-            method: "POST",
-            body: JSON.stringify({ degree_val, score_1_value, score_2_value, comment}),
-            headers: { "Content-Type": "application/json"},
-        });
+    // {
+    //     const response = await fetch("/api/review/new", {
+    //         method: "POST",
+    //         body: JSON.stringify({ degree_val, score_1_value, score_2_value, comment}),
+    //         headers: { "Content-Type": "application/json"},
+    //     });
 
-        if(response.ok) {
-            document.location.replace("/review/new");
-        } else {
-            alert("Something went wrong!");
-        }
-    }
+    //     if(response.ok) {
+    //         document.location.replace("/review/new");
+    //     } else {
+    //         alert("Something went wrong!");
+    //     }
+    // }
 };
 
 document.getElementById("new-review-submit-button").addEventListener("click", newReviewHandler);
