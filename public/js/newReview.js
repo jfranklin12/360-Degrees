@@ -145,19 +145,36 @@ async function newReviewHandler(event) {
     event.preventDefault();
 
     // const college = document.getElementById("college").value.trim();
+<<<<<<< HEAD
     let degree_val = degree.options[degree.selectedIndex].value;
     let score_1_value = scoreOptions[score1El.selectedIndex-1].key;
     let score_2_value = scoreOptions[score2El.selectedIndex-1].key;
     let score_3_value = scoreOptions[score3El.selectedIndex-1].key;
     let score_4_value = scoreOptions[score4El.selectedIndex-1].key;
     const comment = document.getElementById("comment").value;
+=======
+    const degree = document.getElementById("degree");
+    let degree_val = degree.options[degree.selectedIndex].value;
+
+    const score_1 = document.getElementById("score-1");
+    const score_1_value = score_1.options[];
+    const score_2 =document.getElementById("score-2");
+    const score_2_value = score_2.options[score_2.selectedIndex].value;
+    const score_3 = document.getElementById("score-3");
+    const score_3_value = score_3.options[score_3.selectedIndex].value;
+    const score_4 =document.getElementById("score-4");
+    const score_4_value = score_4.options[score_4.selectedIndex].value;
+    const comment = document.getElementById("comment");
+
+>>>>>>> 74c1cf6cc12d56521f165ca62a4ddf3016c1a3b0
     // console.log(college);
     console.log(degree_val);
-    console.log(score_1_value);
-    console.log(score_2_value);
-    console.log(score_3_value);
-    console.log(score_4_value);
+    console.log(score_1);
+    console.log(score_2);
+    console.log(score_3);
+    console.log(score_4);
     console.log(comment);
+<<<<<<< HEAD
     if (degree_val && score_1_value && score_2_value && comment)
     {
         const response = await fetch("/api/newreview", {
@@ -174,6 +191,27 @@ async function newReviewHandler(event) {
     }
 }
 
+=======
+
+    // if(degree && score_1_value && score_2_value && comment)
+    
+    // {
+    //     const response = await fetch("/api/review/new", {
+    //         method: "POST",
+    //         body: JSON.stringify({ degree_val, score_1_value, score_2_value, comment}),
+    //         headers: { "Content-Type": "application/json"},
+    //     });
+
+    //     if(response.ok) {
+    //         document.location.replace("/review/new");
+    //     } else {
+    //         alert("Something went wrong!");
+    //     }
+    // }
+};
+
+document.getElementById("new-review-submit-button").addEventListener("click", newReviewHandler);
+>>>>>>> 74c1cf6cc12d56521f165ca62a4ddf3016c1a3b0
 
 document.getElementById("new-review-submit-button").addEventListener("click",newReviewHandler);
 

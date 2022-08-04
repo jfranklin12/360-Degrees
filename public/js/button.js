@@ -4,7 +4,7 @@ async function searchForDegree(event) {
 
     let searchTerm = document.getElementById("autocomplete-input").value.trim();
 
-    // let modifiedTerm = await getIdValue(searchTerm);
+    let modifiedTerm = await getIdValue(searchTerm);
 
     console.log(searchTerm);
 
