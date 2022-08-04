@@ -61,4 +61,18 @@ router.post("/new", async (req, res) => {
 
 });
 
+router.post("/degree/:id", async (req, res) => {
+    try {
+
+        console.log("Router POST successful.");
+        res.status(200);
+
+    } catch (err) {
+
+        res.status(500).json(err);
+
+    }
+
+});
+
 module.exports = router;
