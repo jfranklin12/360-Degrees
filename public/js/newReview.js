@@ -12,6 +12,7 @@ const newReviewHandler = async (event) => {
     let score_3_value = score_3.value;
     const score_4 =document.getElementById("score-4");
     let score_4_value = score_4.value;
+
     const comment = document.getElementById("comment");
 
     // console.log(college);
