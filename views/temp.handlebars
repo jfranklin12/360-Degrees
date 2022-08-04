@@ -10,9 +10,11 @@
                 <option value="" selected="selected">Select State</option>
                 </select>
             </div>
-            <div class="input-field col s6">
+            <div class="no-autoinit col s6">
                 College Attended: 
-                <input type="text" id="autocomplete-input" class="autocomplete">
+                <select name="college" id="college">
+                <option value="" selected="selected">Please Select State First</option>
+                </select>
             </div>
         </div>
         <div class="row">
@@ -25,7 +27,7 @@
         </div>
         <div class="input-field col s12 m6" id="score-1">
             <select>
-                <option value="">Choose an Option</option>
+                <option value="">How satisfied do you feel with your degree?</option>
                 <option value="1">Very Satisfied</option>
                 <option value="2">Satisfied</option>
                 <option value="3">Complacent</option>
@@ -36,14 +38,14 @@
         </div>
         <div class="input-field col s12 m6" id="score-2">
             <select>
-                <option value="">Choose an Option</option>
-                <option value="1">Employeed before Graduation</option>
-                <option value="2">Within 6 months of graduating</option>
-                <option value="3">Within a year if graduating</option>
-                <option value="4">Longer than a year from graduation</option>
-                <option value="5">Not employeed in my field</option>
+                <option value="">How quickly were you able to find a job in your field?</option>
+                <option value="1">Very Satisfied</option>
+                <option value="2">Satisfied</option>
+                <option value="3">Complacent</option>
+                <option value="4">Dissatisfied</option>
+                <option value="5">Very Dissatisfied</option>
             </select>
-            <label>How quickly were you able to find a job in your field?</label>
+            <label>Score 2</label>
         </div>
                 <div class="input-field col s12 m6" id="score-1">
             <select>
@@ -81,32 +83,3 @@
 </div>
 </div>
 <h1>This is a review page.</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-{{!-- Input Forms for Review --}}
-{{!-- <form class="gen_info">
-    Location of College: <select name="state" id="state">
-        <option value="" selected="selected">Select State</option>
-    </select>
-    College Attended: <select name="college" id="college">
-        <option value="" selected="selected">Please Select State First</option>
-    </select>
-    Degree: <select name="degree" id="degree">
-        <option value="" selected="selected">Please Select a College First</option>
-    </select>
-</form> --}}
-
-<script src="/js/reviewOptions.js"></script> 
-<script src="/js/createReview.js"></script>
-{{!-- <script src="/js/degree.js"></script> --}}
