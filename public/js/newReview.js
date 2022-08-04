@@ -39,5 +39,5 @@ const newReviewHandler = async (event) => {
     }
 };
 
-document.getElementById("new-review-submit-button").addEventListener("click", newReviewHandler);
+document.getElementById("new-review-submit-button", newReviewHandler);
 
