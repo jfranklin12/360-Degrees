@@ -9,7 +9,7 @@ async function searchForDegree (event) {
     console.log(searchTerm);
 
     if (searchTerm) {
-        const response = await fetch(`/api/review/`, {
+        const response = await fetch(`/api/review/${}`, {
             method: "POST",
             body: JSON.stringify({ searchTerm }),
             headers: { "Content-Type": "application/json"}
