@@ -10,11 +10,9 @@
                 <option value="" selected="selected">Select State</option>
                 </select>
             </div>
-            <div class="no-autoinit col s6">
+            <div class="input-field col s6">
                 College Attended: 
-                <select name="college" id="college">
-                <option value="" selected="selected">Please Select State First</option>
-                </select>
+                <input type="text" id="autocomplete-input" class="autocomplete">
             </div>
         </div>
         <div class="row">
@@ -71,7 +69,7 @@
 
 
 {{!-- Input Forms for Review --}}
-<form class="gen_info">
+{{!-- <form class="gen_info">
     Location of College: <select name="state" id="state">
         <option value="" selected="selected">Select State</option>
     </select>
@@ -81,8 +79,8 @@
     Degree: <select name="degree" id="degree">
         <option value="" selected="selected">Please Select a College First</option>
     </select>
-</form>
+</form> --}}
 
 <script src="/js/reviewOptions.js"></script> 
 <script src="/js/createReview.js"></script>
-<script src="/js/degree.js"></script>
+{{!-- <script src="/js/degree.js"></script> --}}
