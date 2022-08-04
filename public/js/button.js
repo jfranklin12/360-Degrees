@@ -4,10 +4,12 @@ async function searchForDegree (event) {
 
     let searchTerm = document.getElementById("autocomplete-input").value.trim();
 
+    let modifiedTerm = await getIdValue(searchTerm);
+
     console.log(searchTerm);
 
     if (searchTerm) {
-        const response = await fetch(`/api/review/`, {
+        const response = await fetch(`/api/review/${}`, {
             method: "POST",
             body: JSON.stringify({ searchTerm }),
             headers: { "Content-Type": "application/json"}
@@ -22,4 +24,13 @@ async function searchForDegree (event) {
         }
     }
 
+}
+
+function getIdValue(term) {
+    switch (term) {
+        case "Accounting":
+            return 1;
+        case "Art":
+            return 2;
+    }
 }
