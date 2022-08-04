@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const inputField = document.querySelector('.autocomplete');
+document.addEventListener("DOMContentLoaded", function() {
+    const inputField = document.querySelector(".autocomplete");
     M.Autocomplete.init(inputField, {
         data: {
             "Accounting": null,
