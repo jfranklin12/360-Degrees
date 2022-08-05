@@ -163,22 +163,24 @@ async function newReviewHandler(event) {
   console.log(score_4_value);
   console.log(comment);
   if (degree_val && score_1_value && score_2_value && comment) {
-    const response = await fetch("/api/newreview", {
+    const response = await fetch("/api/review/new", {
       method: "POST",
       body: JSON.stringify({
         degree_val,
         score_1_value,
         score_2_value,
+        score_3_value,
+        score_4_value,
         comment,
       }),
       headers: { "Content-Type": "application/json" },
     });
 
-    // if (response.ok) {
-    //     document.location.replace("/newreview");
-    // } else {
-    //     alert("Something went wrong!");
-    // }
+    if (response.ok) {
+        document.location.replace("/newreview");
+    } else {
+         alert("Something went wrong!");
+    }
   }
 }
 
