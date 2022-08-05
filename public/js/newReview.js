@@ -90,6 +90,7 @@ const degreeList = [
   "Writing",
   "Other",
 ];
+// Object of the score options
 const scoreOptions = [
   {
     key: 5,
@@ -175,7 +176,7 @@ async function newReviewHandler(event) {
       }),
       headers: { "Content-Type": "application/json" },
     });
-
+//if elese statement makes the new review or alert that "Something went wrong"
     if (response.ok) {
         document.location.replace("/newreview");
     } else {
