@@ -24,4 +24,4 @@ Have you ever been unsure of what degree you wanted to pursue? Were you worried 
 
 ## Screenshot ##
 
-![360 Degrees](./images/screenshot.png "360 Degrees")
+![360 Degrees](./public/images/screenshot.png "360 Degrees")
