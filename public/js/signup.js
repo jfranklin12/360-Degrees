@@ -1,3 +1,4 @@
+//This function handles the signup functionality.
 async function signupHandler (event) {
     event.preventDefault();
 
@@ -5,6 +6,7 @@ async function signupHandler (event) {
     const email = document.getElementById("signup-email").value.trim();
     const password = document.getElementById("signup-password").value.trim();
 
+    //Check that username, email, and password were entered before posting new account information.
     if (username && email && password) {
 
         const response = await fetch("/api/user/signup", {

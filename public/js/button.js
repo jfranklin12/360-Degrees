@@ -1,5 +1,6 @@
 document.getElementById("search-button").addEventListener("click", searchForDegree);
 
+//Handles searching for degree submit functionality.
 async function searchForDegree(event) {
 
     let searchTerm = document.getElementById("autocomplete-input").value.trim();
@@ -23,6 +24,7 @@ async function searchForDegree(event) {
 
 }
 
+//A long ugly switch statement to turn the string into a number for easier use later. Yuck...
 function getIdValue(term) {
     switch (term) {
         case "Accounting":
