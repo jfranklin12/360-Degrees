@@ -2,7 +2,7 @@
 .navbar, .footer {
     background-color: #AF978D;
 }
-/* top corner logo */
+/* top corner logo in main */
 .title {
     font-family: 'Sriracha', cursive;
     text-decoration: none;
@@ -10,7 +10,7 @@
     font-size: 40px;
     font-weight: bolder;
 }
-/* footer */
+/* footer in main */
 .footer-title {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
@@ -18,24 +18,36 @@
 .foot-text {
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
+    text-decoration: none;
+    color: #301934;
 }
+
 /* Buttons for the website */
 .button-style {
     background-color: #C6A489;
     color: #301934;
+    
 }
-
 .button-text {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-size: larger;
 }
 
-.footer-text {
-    text-decoration: none;
+/* homepage handle bars */
+.main-title {
+    font-family: 'Sriracha', cursive;
     color: #301934;
+    font-size: 150px;
+    font-weight: bolder;
 }
+.sub-title {
+    font-family: 'Overpass', sans-serif;
+    color: #301934;
+    font-size: 70px;
+    font-weight: 500;
 
+}
 .review {
     background-color: #A18A94;
     color:#301934;
