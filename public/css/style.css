@@ -46,6 +46,16 @@
     font-size: 150px;
     font-weight: bolder;
 }
+.degree-title {
+    font-family: 'Sriracha', cursive;
+    color: #301934;
+    font-weight: bolder;
+}
+.sub-degree {
+    font-family: 'Overpass', sans-serif;
+    color: #301934;
+
+}
 .sub-title {
     font-family: 'Overpass', sans-serif;
     color: #301934;
