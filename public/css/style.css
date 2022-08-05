@@ -34,7 +34,20 @@
     font-size: larger;
 }
 
+/* homepage handle bars */
+.main-title {
+    font-family: 'Sriracha', cursive;
+    color: #301934;
+    font-size: 150px;
+    font-weight: bolder;
+}
+.sub-title {
+    font-family: 'Overpass', sans-serif;
+    color: #301934;
+    font-size: 70px;
+    font-weight: 500;
 
+}
 .review {
     background-color: #A18A94;
     color:#301934;
