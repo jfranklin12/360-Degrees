@@ -1,4 +1,4 @@
-const { restore } = require("../models/User");
+const { Review } = require("../models");
 
 const router = require("express").Router();
 
@@ -36,16 +36,41 @@ router.get("/signup", async (req, res) => {
 });
 
 //This route is for rendering the review page using handlebars.
-router.get("/review/:degree_id", async (req, res) => {
+// router.get("/review/:degree_id", async (req, res) => {
+
+//     try {
+
+//         //Do an api get request to /api/review/:degree_id
+//         //render the page using all info that matches
+//         //GET REQUEST
+//         //STORE THAT INFO IN JSON
+//         //PASS IT TO THE PAGE
+
+
+//         res.render("review", { degree: req.params.id } );
+
+//     } catch (err) {
+
+//         res.status(500).json(err);
+        
+//     }
+
+// });
+
+router.get("/review", async (req, res) => {
 
     try {
 
-        res.render("review", { degree: req.params.id } );
+        const reviewData = await Review.findAll();
+
+        const reviews = reviewData.map((review) => review.get({ plain: true }));
+
+        res.render("review", { reviews } );
 
     } catch (err) {
 
         res.status(500).json(err);
-        
+
     }
 
 });
