@@ -53,12 +53,20 @@
     font-weight: 500;
 
 }
-
+.review-comment {
+    font-family: 'Overpass', sans-serif;
+    color: #301934;
+}
 /* containers for review and login information */
-.review, .login {
+.review, .login, .new-review {
     background-color: #A18A94;
     color:#301934;
     padding: 2% 4%;
+}
+
+.card-title {
+    color:#301934;
+    font-family: 'Sriracha', cursive;
 }
 
 input, select, option, label {
@@ -66,7 +74,7 @@ input, select, option, label {
     font-family: 'Cabin', sans-serif;
 }
 
-.login-title {
+.login-title, .review-title {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
 }

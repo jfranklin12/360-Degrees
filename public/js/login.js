@@ -1,3 +1,4 @@
+//This function handles login functionality.
 async function loginHandler (event) {
 
     event.preventDefault();
@@ -6,6 +7,7 @@ async function loginHandler (event) {
     const username = document.getElementById("login-username").value.trim();
     const password = document.getElementById("login-password").value.trim();
 
+    //Check that username and password were entered before passing signin information through POST request.
     if (username && password) {
 
         const response = await fetch("/api/user/login", {
