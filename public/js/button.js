@@ -2,18 +2,18 @@ document.getElementById("search-button").addEventListener("click", searchForDegr
 
 //Handles searching for degree submit functionality.
 async function searchForDegree(event) {
-
+// Function tries to autocomplate the degree name in the search bar
     let searchTerm = document.getElementById("autocomplete-input").value.trim();
-
+// Waits until the ID value from the switch case is returned
     let modifiedTerm = await getIdValue(searchTerm);
-
+// takes the search term from the switch case
     if (searchTerm) {
 
         const response = await fetch(`/api/review/${modifiedTerm}`, {
             method: "GET",
             headers: { "Content-Type": "application/json"}
         });
-
+// if else statement 
         if (response.ok) {
             document.location.replace(`/review/${modifiedTerm}`)
 

@@ -1,10 +1,11 @@
 //This function handles the signup functionality.
 async function signupHandler (event) {
     event.preventDefault();
-
+//Gets the Values from the sign up page
     const username = document.getElementById("signup-username").value.trim();
     const email = document.getElementById("signup-email").value.trim();
     const password = document.getElementById("signup-password").value.trim();
+
 
     //Check that username, email, and password were entered before posting new account information.
     if (username && email && password) {

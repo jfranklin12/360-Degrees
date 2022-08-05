@@ -90,7 +90,7 @@ const degreeList = [
   "Writing",
   "Other",
 ];
-
+// For Future deployment to add Universities as a an option for the review
 // const schoolList = [
 //     "University of Alaska",
 //     "AK",
