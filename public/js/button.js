@@ -1,12 +1,13 @@
 document.getElementById("search-button").addEventListener("click", searchForDegree);
 
-async function searchForDegree (event) {
+async function searchForDegree(event) {
 
     let searchTerm = document.getElementById("autocomplete-input").value.trim();
 
     let modifiedTerm = await getIdValue(searchTerm);
 
     if (searchTerm) {
+
         const response = await fetch(`/api/review/${modifiedTerm}`, {
             method: "GET",
             headers: { "Content-Type": "application/json"}
@@ -14,6 +15,7 @@ async function searchForDegree (event) {
 
         if (response.ok) {
             document.location.replace(`/review/${modifiedTerm}`)
+
         } else {
             alert("Invalid degree choice.");
         }
@@ -25,7 +27,7 @@ function getIdValue(term) {
     switch (term) {
         case "Accounting":
             return 1;
-        case "Art Desigin":
+        case "Art Design":
             return 2;
         case "Automotive Technology":
             return 3;
@@ -203,5 +205,6 @@ function getIdValue(term) {
             return 89;
         case "Other": 
             return 90;
+            
     }
 }
