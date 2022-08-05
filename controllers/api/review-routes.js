@@ -41,15 +41,15 @@ router.post("/new", async (req, res) => {
 
     try {
 
-        const review = await Review.create({
-            
-            score_1: req.body.score_1,
-            score_2: req.body.score_2,
-            score_3: req.body.score_3,
-            score_4: req.body.score_4,
-            comment: req.body.comment,
+       const review = await Review.create({
 
-        });
+            score_1: req.body.score_1_value,
+            score_2: req.body.score_2_value,
+            score_3: req.body.score_3_value,
+            score_4: req.body.score_4_value,
+            comment: req.body.comment,
+            degree_id: 1
+       });
 
         res.status(200).json(review);
 
