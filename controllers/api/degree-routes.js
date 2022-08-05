@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 router.get("/", async (req, res) => {
     try {
-        //TODO
+
         const degree = await Degree.findAll();
 
         res.status(200).json(degree);
