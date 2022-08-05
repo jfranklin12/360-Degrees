@@ -13,6 +13,7 @@ router.get("/", async (req, res) => {
 
 });
 
+
 // This route is for rendering the login page using handlebars.
 router.get("/login", async (req, res) => {
 
@@ -35,12 +36,16 @@ router.get("/signup", async (req, res) => {
 });
 
 //This route is for rendering the review page using handlebars.
-router.get("/review", async (req, res) => {
+router.get("/review/:degree_id", async (req, res) => {
 
     try {
-        res.render("review");
+
+        res.render("review", { degree: req.params.id } );
+
     } catch (err) {
+
         res.status(500).json(err);
+        
     }
 
 });

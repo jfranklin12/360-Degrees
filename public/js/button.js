@@ -6,19 +6,16 @@ async function searchForDegree(event) {
 
     let modifiedTerm = await getIdValue(searchTerm);
 
-    console.log(searchTerm);
-
     if (searchTerm) {
-        const response = await fetch("/api/review/", {
-            method: "POST",
-            body: JSON.stringify({ searchTerm }),
-            headers: { "Content-Type": "application/json" }
+
+        const response = await fetch(`/api/review/${modifiedTerm}`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json"}
         });
 
         if (response.ok) {
-            //TODO: Make sure this forwards correctly.
-            document.location.replace(/review/degree)
-            console.log("Response successful.");
+            document.location.replace(`/review/${modifiedTerm}`)
+
         } else {
             alert("Invalid degree choice.");
         }
@@ -36,177 +33,178 @@ function getIdValue(term) {
             return 3;
         case "Aviation":
             return 4;
-        case "Biology":
+        case "Biology": 
             return 5;
-        case "Business":
+        case "Business": 
             return 6;
-        case "CAD/Computer Aided Drafting":
+        case "CAD/Computer Aided Drafting": 
             return 7;
-        case "Child Development":
+        case "Child Development": 
             return 8;
-        case "Christian Counseling":
+        case "Christian Counseling": 
             return 9;
-        case "Clinical Psychology":
+        case "Clinical Psychology": 
             return 10;
-        case "Communications":
+        case "Communications": 
             return 11;
-        case "Computer Animation":
+        case "Computer Animation": 
             return 12;
-        case "Computer Engineering":
+        case "Computer Engineering": 
             return 13;
-        case "Computer Forensics":
+        case "Computer Forensics": 
             return 14;
-        case "Computer Networking":
+        case "Computer Networking": 
             return 15;
-        case "Computer Programming":
+        case "Computer Programming": 
             return 16;
-        case "Computer Science":
+        case "Computer Science": 
             return 17;
-        case "Construction Management":
+        case "Construction Management": 
             return 18;
-        case "Counseling":
+        case "Counseling": 
             return 19;
-        case "Counseling Psychology":
+        case "Counseling Psychology": 
             return 20;
-        case "Criminal Justice":
+        case "Criminal Justice": 
             return 21;
-        case "Culinary Arts":
+        case "Culinary Arts": 
             return 22;
-        case "Cybersecurity":
+        case "Cybersecurity": 
             return 23;
-        case "Diesel Mechanic":
+        case "Diesel Mechanic": 
             return 24;
-        case "Early Childhood Education":
+        case "Early Childhood Education": 
             return 25;
-        case "Education":
+        case "Education": 
             return 26;
-        case "Electrical Engineering":
+        case "Electrical Engineering": 
             return 27;
-        case "Electronics":
+        case "Electronics": 
             return 28;
-        case "English":
+        case "English": 
             return 29;
-        case "Exercise Science":
+        case "Exercise Science": 
             return 30;
-        case "Fitness Trainer":
+        case "Fitness Trainer": 
             return 31;
-        case "Forensic Psychology":
+        case "Forensic Psychology": 
             return 32;
-        case "Forensic Science":
+        case "Forensic Science": 
             return 33;
-        case "Graphic Design":
+        case "Graphic Design": 
             return 34;
-        case "Gunsmithing":
+        case "Gunsmithing": 
             return 35;
-        case "Health Education":
+        case "Health Education": 
             return 36;
-        case "Health Sciences":
+        case "Health Sciences": 
             return 37;
-        case "Healthcare Administration":
+        case "Healthcare Administration": 
             return 38;
-        case "Healthcare Informatics":
+        case "Healthcare Informatics": 
             return 39;
-        case "Healthcare Management":
+        case "Healthcare Management": 
             return 40;
-        case "History":
+        case "History": 
             return 41;
-        case "Holistic Medicine":
+        case "Holistic Medicine": 
             return 42;
-        case "Hospitality Management":
+        case "Hospitality Management": 
             return 43;
-        case "Human Resources":
+        case "Human Resources": 
             return 44;
-        case "Human Services":
+        case "Human Services": 
             return 45;
-        case "HVAC":
+        case "HVAC": 
             return 46;
-        case "Information Technology":
+        case "Information Technology": 
             return 47;
-        case "Interior Design":
+        case "Interior Design": 
             return 48;
-        case "Jewelry Design":
+        case "Jewelry Design": 
             return 49;
-        case "Journalism":
+        case "Journalism": 
             return 50;
-        case "Landscape Design":
+        case "Landscape Design": 
             return 51;
-        case "Law":
+        case "Law": 
             return 52;
-        case "Mathematics":
+        case "Mathematics": 
             return 53;
-        case "Mechanical Engineering":
+        case "Mechanical Engineering": 
             return 54;
-        case "Medical Billing Coding":
+        case "Medical Billing Coding": 
             return 55;
-        case "Medical Office Administration":
+        case "Medical Office Administration": 
             return 56;
-        case "Motorcycle Mechanic":
+        case "Motorcycle Mechanic": 
             return 57;
-        case "Music Production":
+        case "Music Production": 
             return 58;
-        case "Network Administration":
+        case "Network Administration": 
             return 59;
-        case "Network Security":
+        case "Network Security": 
             return 60;
-        case "Nurse Practitioner (NP)":
+        case "Nurse Practitioner (NP)": 
             return 61;
-        case "Nursing":
+        case "Nursing": 
             return 62;
-        case "Nutrition":
+        case "Nutrition": 
             return 63;
-        case "Occupational Therapy Assistant":
+        case "Occupational Therapy Assistant": 
             return 64;
-        case "Office Management":
+        case "Office Management": 
             return 65;
-        case "Organizational Leadership":
+        case "Organizational Leadership": 
             return 66;
-        case "Patient Care Technician":
+        case "Patient Care Technician": 
             return 67;
-        case "Personal Training":
+        case "Personal Training": 
             return 68;
-        case "Pharmacy":
+        case "Pharmacy": 
             return 69;
-        case "Pharmacy Technician":
+        case "Pharmacy Technician": 
             return 70;
-        case "Photography":
+        case "Photography": 
             return 71;
-        case "Physics":
+        case "Physics": 
             return 72;
-        case "Psychology":
+        case "Psychology": 
             return 73;
-        case "Public Administration":
+        case "Public Administration": 
             return 74;
-        case "Public Health":
+        case "Public Health": 
             return 75;
-        case "Real Estate":
+        case "Real Estate": 
             return 76;
-        case "Respiratory Therapy":
+        case "Respiratory Therapy": 
             return 77;
-        case "School Counseling":
+        case "School Counseling": 
             return 78;
-        case "Social Work":
+        case "Social Work": 
             return 79;
-        case "Sports Management":
+        case "Sports Management": 
             return 80;
-        case "Sports Medicine":
+        case "Sports Medicine": 
             return 81;
-        case "Substance Abuse Counseling":
+        case "Substance Abuse Counseling": 
             return 82;
-        case "Teaching":
+        case "Teaching": 
             return 83;
-        case "Technology Management":
+        case "Technology Management": 
             return 84;
-        case "Veterinary Technician":
+        case "Veterinary Technician": 
             return 85;
-        case "Video Game Design":
+        case "Video Game Design": 
             return 86;
-        case "Vocational":
+        case "Vocational": 
             return 87;
-        case "Web Design":
+        case "Web Design": 
             return 88;
-        case "Writing":
+        case "Writing": 
             return 89;
-        case "Other":
+        case "Other": 
             return 90;
-    };
-};
+            
+    }
+}
