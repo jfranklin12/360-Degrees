@@ -20,7 +20,7 @@ Have you ever been unsure of what degree you wanted to pursue? Were you worried 
 
 ## Live Website ##
 
-[Placeholder](https://threesixtydegrees.herokuapp.com/)
+[360 Degrees](https://threesixtydegrees.herokuapp.com/)
 
 ## Screenshot ##
 
